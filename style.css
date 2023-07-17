@@ -1,0 +1,180 @@
+:root{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    background-color: #feece0;
+    font-family: Source Serif Pro;
+   
+
+    --bg-color: #9B6647;
+    --tx-h1-color:#58190A;
+    --tx-white: #FEECE0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: var(--tx-color);
+    font-size: 1.6rem;
+    min-height: 100vh;
+    
+
+    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Source Serif 4', serif;
+
+  
+}
+
+
+.secondary{
+    background-color: #9B6647;
+    width: 50%vhw;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    width: 50%vhw;
+    padding: 20px;
+}
+
+.main img{
+    width: 409px;
+    height: 293px;
+}
+
+
+
+.counteudo-texto{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.main h1{
+    color: var(--tx-h1-color);
+    font-size: 7.2rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    
+}
+
+.main h2{
+    color: var(--tx-h1-color);
+    font-size: 3.8rem;
+    margin-bottom: 30px;
+    font-family: 'Source Serif 4', serif;;
+    font-weight: 400;
+}
+
+.porcao{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    width: 50px;
+    height: 60px;
+    border: #58190A solid 5px;
+}
+
+.porcao p{
+    font-size: 38px;
+    font-weight: 400;
+    font-style: normal;
+    color: #9B6647;
+}
+.porcao svg{
+    width: 32px;
+    height: 32px;
+    transition: width 0.2s;
+    transition: height 0.2s;
+}
+
+
+#qtd::before{
+    content: attr(data-content);
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--tx-white);
+    line-height: 0;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.porcao #qtd::before{
+    line-height: normal;
+    color: #9B6647;
+    font-size: 40px;
+    font-family: 'Source Serif 4', serif;;
+}
+.porcao svg:hover{
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    
+}
+
+.preparo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 64px;
+    padding: 74px 50px;
+    
+}
+
+
+.conteudo-preparo{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    
+}
+
+.conteudo-preparo ul{
+    display: inline-block;
+}
+
+
+.titulo-preparo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 11px;
+}
+
+.titulo-preparo h1{
+    color: #FEECE0;
+    font-size: 38px;
+}
+
+.conteudo-preparo li{
+    color: #FFF;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+/* Falta tornar responsivo */
+
+@media(max-width: 1165px){
+    .main{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .porcao{
+        justify-content: center;
+    }
+}
